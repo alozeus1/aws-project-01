@@ -62,7 +62,7 @@
 <body>
     <div class="container">
         <h1>Amazon Web Services Project Work</h1>
-        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES, 'UTF-8'); ?>" method="POST">
             <table>
                 <tr><td>NAME</td><td><input type="text" name="NAME" maxlength="45" /></td></tr>
                 <tr><td>ADDRESS</td><td><input type="text" name="ADDRESS" maxlength="90" /></td></tr>
